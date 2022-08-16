@@ -53,7 +53,7 @@ body {
   width: 100%;
   top: 55px;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   transition: top 0.3s, background 0.3s, padding 0.3s;
 }
 .header_sticky {
@@ -61,6 +61,9 @@ body {
   top: 0;
   background: #fff;
   padding: 15px 0;
+}
+.header_sticky + main {
+  margin-top: 50px;
 }
 .header_sticky .menu__link {
   color: #000;

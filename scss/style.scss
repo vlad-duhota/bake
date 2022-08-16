@@ -59,13 +59,16 @@ body{
     width: 100%;
     top: 55px;
     left: 0;
-    z-index: 3;
+    z-index: 4;
     transition: top .3s, background .3s, padding .3s;
     &_sticky{
         position: fixed;
         top: 0;
         background: #fff;
         padding: 15px 0;
+        & + main{
+            margin-top: 50px;
+        }
         .menu__link{
             color: #000;
             &::after{
