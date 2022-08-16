@@ -976,6 +976,11 @@ body {
   font-size: 24px;
   font-weight: 200;
 }
+@media (max-width: 375px) {
+  .pop-up__input {
+    max-width: 100%;
+  }
+}
 .pop-up__addres-input {
   margin-bottom: 35px;
 }
