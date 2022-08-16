@@ -34,6 +34,7 @@ btnsOpen.forEach(btn => {
     btn.addEventListener('click', handle);
 });
 
+// pop up
 popUp.addEventListener('click', function(e){
     if(e.target===this){
         popUp.classList.remove('pop-up_active');
@@ -42,6 +43,15 @@ popUp.addEventListener('click', function(e){
         });
         bodyElem.style.overflow = 'auto';
     }
+});
+// close pop up mobile
+const popUpClose = document.querySelector('.pop-up__close-btn');
+popUpClose.addEventListener('click', function(){
+  popUp.classList.remove('pop-up_active');
+  bluredElements.forEach(elem => {
+      elem.classList.remove('blured');
+  });
+  bodyElem.style.overflow = 'auto';
 });
 
 // menu
@@ -88,3 +98,4 @@ menuLinks.forEach(elem => {
     menuBtn.classList.remove('header__menu-btn_active');
   });
 });
+
